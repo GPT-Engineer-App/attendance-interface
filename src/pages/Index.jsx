@@ -1,4 +1,5 @@
 import { Box, Button, Container, Heading, Input, Stack, Text, VStack, Image } from "@chakra-ui/react";
+import RFIDDataDisplay from "../components/RFIDDataDisplay";
 import { FaUserCheck, FaUserPlus, FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -31,6 +32,7 @@ const Index = () => {
             Check Attendance
           </Button>
         </Stack>
+        <RFIDDataDisplay data={["RFID Tag 1234", "RFID Tag 5678", "RFID Tag 9012"]} />
       </VStack>
     </Container>
   );
